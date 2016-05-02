@@ -52,6 +52,15 @@ nav {
 	width: 200px;
 }
 
+.calculator-variants section>ul {
+	padding-left: 40px;
+	margin: 0;
+}
+
+.calculator-variants section>h4 {
+	color: #0563A2;
+}
+
 
 
 /* images */
