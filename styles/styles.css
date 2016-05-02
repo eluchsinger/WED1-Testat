@@ -14,6 +14,26 @@ body {
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
 }
 
+header {
+	background-color: #0060A0;
+	height: 75px;
+	color: white;
+}
+
+header * {
+	display: inline-block;
+}
+
+header h1 {
+	vertical-align: top;
+	margin-top: 15px;
+	font-size: 3em;
+}
+
+nav {
+	margin-top: 50px;
+}
+
 .article-header * {
 	display: inline;
 }
