@@ -39,6 +39,20 @@ nav {
 }
 
 
+/* Side-picture */
+.section-picture {
+	color: grey;
+}
+
+.section-picture a {
+	color: black;
+}
+
+.section-picture img {
+	width: 200px;
+}
+
+
 
 /* images */
 
