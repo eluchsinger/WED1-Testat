@@ -14,6 +14,10 @@ body {
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
 }
 
+.article-header * {
+	display: inline;
+}
+
 
 
 /* images */
@@ -44,4 +48,3 @@ body {
 	vertical-align: middle;
 	padding: 0; margin: 0;
 }
-
