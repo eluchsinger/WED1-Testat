@@ -341,8 +341,63 @@
 			</section>
 			<section>
 				<h2>Neuen Autor registrieren</h2>
+				<form action="">
+					<fieldset>
+						<legend>Autor</legend>
+						<div>
+							<label for="aname">Name</label>
+							<input type="text" name="aname" placeholder="Name" />
+						</div>
+						<div>
+							<label for="amail">E-Mail</label>
+							<input type="email" name="amail" placeholder="E-Mail" />
+						</div>
+						<div>
+							<label for="awebsite">Webseite</label>
+							<input type="url" name="website" placeholder="Webseite" />
+						</div>
+						<div>
+							<label for="anationality">Nationalität</label>
+							<select name="anationality" >
+								<option value="-- Wählen --">-- Wählen --</option>
+								<option value="Switzerland">Switzerland</option>
+								<option value="Deutschland">Deutschland</option>
+								<option value="Frankreich">Frankreich</option>
+								<option value="Italien">Italien</option>
+								<option value="Österreich">Österreich</option>
+							</select>
+						</div>
+						<div>
+							<label for="profiletext">Profiltext</label>
+							<input type="text" name="profiletext">
+						</div>
+						<div>
+							<label for="profilepics">Profilbilder</label>
+							<input type="file" name="profilepic" >
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Rechtliches</legend>
+						<div>
+							<label>
+								<input type="checkbox" value="Test">
+								Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
+							</label>
+							<label>
+								<input type="checkbox">
+								Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
+							</label>
+							<label>
+								<input type="checkbox">
+								Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
+eingereichte Medien Bilder nicht manipuliert wurden
+							</label>
+						</div>
+					</fieldset>
+					<button type="submit">Account anlegen</button>
+					<button type="reset">Eingaben zurücksetzen</button>
+				</form>
 			</section>
-			<!-- TODO -->
 		</main>
 		<footer>
 		<!-- TODO -->
