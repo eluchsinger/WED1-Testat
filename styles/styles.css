@@ -7,10 +7,17 @@
 	margin: 0;
 }
 
+a {
+	color: rgb(96, 155, 194);
+}
+
 /* document */
 body {
 	font-size: 1rem;
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+	
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 header {
@@ -41,7 +48,8 @@ nav > h2 {
 nav > ul {
 	border-width: 2px;
 	border-style: solid;
-	padding-left: 7px;
+	border-color: rgb(60, 120, 150);
+	padding: 7px;
 }
 
 nav ul {
