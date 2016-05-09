@@ -52,14 +52,29 @@ nav ul > li > ul {
 	padding-left: 15px;
 }
 
+/* Grosser Titel der Wiki Seite */
 .article-header * {
-	display: inline;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-
 
 /* Side-picture */
 .section-picture {
 	color: grey;
+}
+
+/* Section Styles*/
+section > h3 {
+	border-bottom-style: solid;
+	margin-bottom: 15px;
+}
+
+section > h4 {
+	margin-bottom: 15px;
+}
+
+section > p {
+	margin-bottom: 15px;
 }
 
 .section-picture a {
