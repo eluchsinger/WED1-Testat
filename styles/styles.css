@@ -89,12 +89,20 @@ section > p {
 	margin-bottom: 15px;
 }
 
+.section-picture {
+	float: left;
+	margin-top: 30px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 240px;
+}
+
 .section-picture a {
 	color: black;
 }
 
 .section-picture img {
-	width: 200px;
+	width:200px;
 }
 
 .calculator-variants section>ul {
@@ -113,6 +121,7 @@ section > p {
 #font-size-form {
 	float: right;
 }
+
 #font-size-form > label, #font-size-form > input, #font-size-form > output {
 	display: inline-block;
 	vertical-align: middle;
