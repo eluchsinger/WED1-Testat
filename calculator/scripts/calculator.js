@@ -2,31 +2,23 @@
  * Load
  */
 window.addEventListener('load', function() {
-input = document.getElementById("input");
-output = document.getElementById("output");
-    
+    operation = {value:"", operator:null};
     output.innerText = "Guten Tag, ich bin Rechni :)";
+    input = document.getElementById("input");
+    output = document.getElementById("output");
     
-    document.getElementById("key-0").addEventListener('click', clickNumber);
-    document.getElementById("key-1").addEventListener('click', clickNumber);
-    document.getElementById("key-2").addEventListener('click', clickNumber);
-    document.getElementById("key-3").addEventListener('click', clickNumber);
-    document.getElementById("key-4").addEventListener('click', clickNumber);
-    document.getElementById("key-5").addEventListener('click', clickNumber);
-    document.getElementById("key-6").addEventListener('click', clickNumber);
-    document.getElementById("key-7").addEventListener('click', clickNumber);
-    document.getElementById("key-8").addEventListener('click', clickNumber);
-    document.getElementById("key-9").addEventListener('click', clickNumber);
-
-
+    for (i = 0; i < document.getElementsByClassName("number").length; i++) { 
+        document.getElementsByClassName("number")[i].addEventListener('click', clickNumber);
+    }
+    
+    for (i = 0; i < document.getElementsByClassName("operator").length; i++){
+        document.getElementsByClassName("operator")[i].addEventListener("click", clickOperation);
+    }
+    
+    document.getElementById("key-c").addEventListener(('click'), cFunction);
+    document.getElementById("key-=").addEventListener(('click'), doIt);
+    
 });
-
-
-
-
-/**
- * Functions
- */
 
 function add(p1, p2) {
     return p1 + p2;              
@@ -45,25 +37,54 @@ function multiply(p1, p2) {
 }
 
 function clickNumber() {
-    var value = this.value;
-    input.value += value;
+    input.value += this.value;
 }
 
-function clickFunction(){
+function clickOperation(){
+    operation.operator = this.value;
     
+    if (input.value != ""){
+        if (output.value == "Guten Tag, ich bin Rechni :)"){
+            operation.value = input.value;
+            input.value = "";
+        } else {
+            input.value = "";
+        } 
+    }
+    output.value = operation.value + " " + operation.operator;
 }
 
-var betweenProfit;
+function doIt(){
+    if (operation.value == ""){
+        output.value = "Bitte rechnen Sie etwas vernünftiges ;)"
+    } else {
+        operation.value = calculate(operation.value, input.value);
+        output.value = operation.value;
+    }
+    input.value = "";
+}
 
+function cFunction() {
+    output.innerText = "Guten Tag, ich bin Rechni :)";
+    operation.value = "";
+    input.value = "";
+}
 
-
-
-
-
-
-
-
-/**
- * Calcuation
- */
-
+function calculate(p1, p2){
+    switch (operation.operator) {
+        case "+":
+            console.log("+");
+            return parseInt(p1) + parseInt(p2); 
+        case "-":
+            console.log("-");
+            return parseInt(p1) - parseInt(p2); 
+        case "/":
+            console.log("/");
+            return parseInt(p1) / parseInt(p2); 
+        case "*":
+            return parseInt(p1) * parseInt(p2); 
+        default:
+            console.log("unknown operation")
+            break;
+    }
+}
