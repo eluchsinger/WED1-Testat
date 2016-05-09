@@ -26,35 +26,34 @@
 			<ul>
 				<li><a href="/de/">Hauptseite</a></li>
 				<li><a href="/de/topics/">Themenportale</a></li>
-				<li>Mitmachen</li>
-				<ul>
-					<li><a href="/de/join/enhance-article/calculator">Artikel verbessern</a></li>
-					<li><a href="/de/join/create-article">Neuen Artikel anlegen</a></li>
-					<li><a href="/de/join/author-portal">Autorenportal</a></li>
-					<li><a href="/de/join/help">Hilfe</a></li>
-					<li><a href="/de/join/last-changes-calculator">Letzte Änderungen</a></li>
-					<li><a href="/de/join/contact">Kontakt</a></li>
-					<li><a href="/de/join/donate">Spenden</a></li>
-				</ul>
-				<li>Werkzeuge</li>
-				<ul>
-					<li><a href="/de/calculator/tools/links-to-this-page">Links auf diese Seite</a></li>
-					<li><a href="/de/calculator/tools/linked-changes">Änderungen an verlinkten Seiten</a></li>
-					<li><a href="/de/calculator/tools/permanent-link">Permanenter Link</a></li>
-					<li><a href="/de/calculator/tools/cite-article">Artikel zitieren</a></li>
-				</ul>
-				<li>In anderen Sprachen</li>
-				<ul>
-					<li><a href="/it/articles/calculator">Italiano</a></li>
-					<li><a href="/fr/articles/calculator">Francais</a></li>
-					<li><a href="/en/articles/calculator">English</a></li>
-				</ul>
+				<li>Mitmachen
+					<ul>
+						<li><a href="/de/join/enhance-article/calculator">Artikel verbessern</a></li>
+						<li><a href="/de/join/create-article">Neuen Artikel anlegen</a></li>
+						<li><a href="/de/join/author-portal">Autorenportal</a></li>
+						<li><a href="/de/join/help">Hilfe</a></li>
+						<li><a href="/de/join/last-changes-calculator">Letzte Änderungen</a></li>
+						<li><a href="/de/join/contact">Kontakt</a></li>
+						<li><a href="/de/join/donate">Spenden</a></li>
+					</ul>
+				</li>
+				<li>Werkzeuge
+					<ul>
+						<li><a href="/de/calculator/tools/links-to-this-page">Links auf diese Seite</a></li>
+						<li><a href="/de/calculator/tools/linked-changes">Änderungen an verlinkten Seiten</a></li>
+						<li><a href="/de/calculator/tools/permanent-link">Permanenter Link</a></li>
+						<li><a href="/de/calculator/tools/cite-article">Artikel zitieren</a></li>
+					</ul>
+				</li>
+				<li>In anderen Sprachen
+					<ul>
+						<li><a href="/it/articles/calculator">Italiano</a></li>
+						<li><a href="/fr/articles/calculator">Francais</a></li>
+						<li><a href="/en/articles/calculator">English</a></li>
+					</ul>
+				</li>
 			</ul>
-			<!-- TODO navigation-->
-			<!-- (Vielleicht in Header - Tag) -->
 		</nav>
-
-
 		<main>
 			<div class="article-header">
 				<h2>Taschenrechner</h2>
@@ -364,39 +363,45 @@
 			</section>
 			<section>
 				<h2>Neuen Autor registrieren</h2>
-				<form action="">
+				<form method="post" action="?">
 					<fieldset>
 						<legend>Autor</legend>
 						<div>
-							<label for="aname">Name</label>
-							<input type="text" name="aname" placeholder="Name" />
+							<label>Name
+								<input type="text" name="aname" placeholder="Name" />
+							</label>
 						</div>
 						<div>
-							<label for="amail">E-Mail</label>
-							<input type="email" name="amail" placeholder="E-Mail" />
+							<label>E-Mail
+								<input type="email" name="amail" placeholder="E-Mail" />
+							</label>
 						</div>
 						<div>
-							<label for="awebsite">Webseite</label>
-							<input type="url" name="website" placeholder="Webseite" />
+							<label>Webseite
+								<input type="url" name="website" placeholder="Webseite" />
+							</label>
 						</div>
 						<div>
-							<label for="anationality">Nationalität</label>
-							<select name="anationality" >
-								<option value="-- Wählen --">-- Wählen --</option>
-								<option value="Switzerland">Switzerland</option>
-								<option value="Deutschland">Deutschland</option>
-								<option value="Frankreich">Frankreich</option>
-								<option value="Italien">Italien</option>
-								<option value="Österreich">Österreich</option>
-							</select>
+							<label>Nationalität
+								<select name="anationality" >
+									<option value="-- Wählen --">-- Wählen --</option>
+									<option value="Switzerland">Switzerland</option>
+									<option value="Deutschland">Deutschland</option>
+									<option value="Frankreich">Frankreich</option>
+									<option value="Italien">Italien</option>
+									<option value="Österreich">Österreich</option>
+								</select>
+							</label>
 						</div>
 						<div>
-							<label for="profiletext">Profiltext</label>
-							<input type="text" name="profiletext">
+							<label>Profiltext
+								<input type="text" name="profiletext">
+							</label>
 						</div>
 						<div>
-							<label for="profilepics">Profilbilder</label>
-							<input type="file" name="profilepic" >
+							<label>Profilbilder
+								<input type="file" name="profilepic" />
+							</label>
 						</div>
 					</fieldset>
 					<fieldset>
@@ -404,16 +409,18 @@
 						<div>
 							<label>
 								<input type="checkbox" value="Test">
-								Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
+								Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin.
 							</label>
+							<br />
 							<label>
 								<input type="checkbox">
-								Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
+								Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin.
 							</label>
+							<br />
 							<label>
 								<input type="checkbox">
 								Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-eingereichte Medien Bilder nicht manipuliert wurden
+								eingereichte Medien Bilder nicht manipuliert wurden.
 							</label>
 						</div>
 					</fieldset>
@@ -427,7 +434,7 @@ eingereichte Medien Bilder nicht manipuliert wurden
 				Bahnhofstrasse 42,
 				8000 Zürich
 			</address>
-			<a href="tel:055 444 33 22">055 444 33 22</a>
+			<a href="tel:0554443322">055 444 33 22</a>
 			<a href="mailto:info@wikipraktika.com">info@wikipraktika.com</a>
 			<small>
 				Alle Inhalte von Wikipraktika stehen unter der <img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons">
