@@ -29,8 +29,27 @@ header h1 {
 	font-size: 3em;
 }
 
+/* Navigation */
 nav {
 	margin-top: 50px;
+}
+
+nav > h2 {
+	margin-bottom: 15px;
+}
+
+nav > ul {
+	border-width: 2px;
+	border-style: solid;
+	padding-left: 7px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul > li > ul {
+	padding-left: 15px;
 }
 
 .article-header * {
