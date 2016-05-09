@@ -72,6 +72,10 @@ nav ul > li > ul {
 }
 
 /* Section Styles*/
+section {
+	margin-bottom: 15px;
+}
+
 section > h3 {
 	border-bottom-style: solid;
 	margin-bottom: 15px;
@@ -106,28 +110,6 @@ section > p {
 	padding-left: 40px;
 }
 
-
-
-/* images */
-
-
-
-/* text */
-
-
-
-/* lists */
-
-
-
-/* table */
-
-
-
-/* forms */
-
-
-
 #font-size-form {
 	float: right;
 }
@@ -135,4 +117,9 @@ section > p {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 0; margin: 0;
+}
+
+.calc-demo {
+	width: 600px;
+	height: 650px;
 }
