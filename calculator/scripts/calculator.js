@@ -44,12 +44,12 @@ function clickOperation(){
     operation.operator = this.value;
     
     if (input.value != ""){
-        if (output.value == "Guten Tag, ich bin Rechni :)"){
+        if (output.value == "Guten Tag, ich bin Rechni :)" || output.value == "Bitte rechnen Sie etwas vernünftiges ;)"){
             operation.value = input.value;
             input.value = "";
-        } else {
-            input.value = "";
         } 
+        
+        
     }
     output.value = operation.value + " " + operation.operator;
 }
@@ -57,6 +57,10 @@ function clickOperation(){
 function doIt(){
     if (operation.value == ""){
         output.value = "Bitte rechnen Sie etwas vernünftiges ;)"
+        operation.value = "";
+    } else if(input.value == 0 && operation.operator == "/") {
+        output.value = "Bitte rechnen Sie etwas vernünftiges ;)"
+        operation.value = "";
     } else {
         operation.value = calculate(operation.value, input.value);
         output.value = operation.value;
@@ -65,7 +69,7 @@ function doIt(){
 }
 
 function cFunction() {
-    output.innerText = "Guten Tag, ich bin Rechni :)";
+    output.value = "Guten Tag, ich bin Rechni :)";
     operation.value = "";
     input.value = "";
 }
