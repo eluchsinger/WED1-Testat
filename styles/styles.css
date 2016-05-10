@@ -7,8 +7,12 @@
 	margin: 0;
 }
 
-a {
+nav a {
 	color: rgb(96, 155, 194);
+}
+
+main a {
+	color: black;
 }
 
 /* document */
@@ -105,6 +109,7 @@ section > p {
 	width:200px;
 }
 
+/* Taschenrechner Varianten */
 .calculator-variants section>ul {
 	padding-left: 40px;
 	margin: 0;
@@ -114,10 +119,12 @@ section > p {
 	color: #0563A2;
 }
 
+/* Beste Taschenrechner */
 .best-and-worst-calcs ol {
 	padding-left: 40px;
 }
 
+/* Schriftgrösse ändern */
 #font-size-form {
 	float: right;
 }
@@ -128,7 +135,13 @@ section > p {
 	padding: 0; margin: 0;
 }
 
+/* Taschenrechner Demo */
 .calc-demo {
 	width: 600px;
 	height: 650px;
+}
+
+.last-changed {
+	border-style: dotted;
+	border-width: 1px;
 }
