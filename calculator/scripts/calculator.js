@@ -64,6 +64,7 @@ function doIt(){
     } else {
         operation.value = calculate(operation.value, input.value);
         output.value = operation.value;
+        operation.value = "";
     }
     input.value = "";
 }
