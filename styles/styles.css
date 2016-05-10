@@ -22,6 +22,7 @@ body {
 	
 	margin-left: 100px;
 	margin-right: 100px;
+	counter-reset: h3;
 }
 
 header {
@@ -83,6 +84,11 @@ section {
 section > h3 {
 	border-bottom-style: solid;
 	margin-bottom: 15px;
+}
+
+section > h3::before {
+	counter-increment: h3;
+	content: counter(h3) " ";
 }
 
 section > h4 {
