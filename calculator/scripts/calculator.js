@@ -1,8 +1,8 @@
 /**
- * Load
+ * UI, Load
  */
 window.addEventListener('load', function() {
-    operation = {value:"", operator:null};
+    operation = {value:"", operator:""};
     output.innerText = "Guten Tag, ich bin Rechni :)";
     input = document.getElementById("input");
     output = document.getElementById("output");
@@ -20,21 +20,9 @@ window.addEventListener('load', function() {
     
 });
 
-function add(p1, p2) {
-    return p1 + p2;              
-}
-
-function divide(p1, p2) {
-    return p1 / p2;              
-}
-
-function minus(p1, p2) {
-    return p1 - p2;              
-}
-
-function multiply(p1, p2) {
-    return p1 * p2;
-}
+/**
+ * UI, Functions
+ */
 
 function clickNumber() {
     input.value += this.value;
@@ -48,8 +36,6 @@ function clickOperation(){
             operation.value = input.value;
             input.value = "";
         } 
-        
-        
     }
     output.value = operation.value + " " + operation.operator;
 }
@@ -74,6 +60,10 @@ function cFunction() {
     operation.value = "";
     input.value = "";
 }
+
+/**
+ * Core
+ */
 
 function calculate(p1, p2){
     switch (operation.operator) {
