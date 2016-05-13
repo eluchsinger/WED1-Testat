@@ -151,3 +151,14 @@ section > p {
 	border-style: dotted;
 	border-width: 1px;
 }
+
+/* Button */
+button {
+	background-color: #0060A0;
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 4px 2px;
+	cursor: pointer;
+}
