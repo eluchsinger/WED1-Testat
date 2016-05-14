@@ -152,7 +152,7 @@ section > p {
 	border-width: 1px;
 }
 
-/* Button */
+/* Buttons */
 button {
 	background-color: #0060A0;
 	border: none;
@@ -163,4 +163,9 @@ button {
 	cursor: pointer;
 }
 
-/* Anmeldeformular in Bearbeitung -> Fabian */
+/* Anmeldeformular*/
+input[type=text], [type=email], [type=url], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
