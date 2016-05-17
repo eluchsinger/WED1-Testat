@@ -154,6 +154,40 @@ section > p {
 	border-width: 1px;
 }
 
+/* Zeitgewinn Tabelle */
+.time-optimizations table, th, td {
+}
+
+.time-optimizations > table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+.time-optimizations th {
+	color: white;
+	background-color: rgb(0, 96, 160);
+	border: 0 solid black;
+	border-top-width: 3px;
+	border-bottom-width: 3px;
+	padding: 10px;
+}
+
+.time-optimizations td {
+	padding: 10px;
+	text-align: center;
+}
+
+.time-optimizations > table tr:nth-child(odd) > td {
+	background-color: rgb(219, 230, 239);
+	border: 0 solid rgb(189, 208, 228);
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+}
+
+.time-optimizations > table td:first-child {
+	text-align: left;
+}
+
 /* Buttons */
 button {
 	background-color: #0060A0;
