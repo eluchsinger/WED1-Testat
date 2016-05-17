@@ -116,18 +116,20 @@ section > p {
 }
 
 /* Taschenrechner Varianten */
-.calculator-variants section>ul {
+.calculator-variants section > ul {
 	padding-left: 40px;
 	margin: 0;
 }
 
-.calculator-variants section>h4 {
+.calculator-variants section > h4 {
 	color: #0563A2;
 }
 
-/* Beste Taschenrechner */
-.best-and-worst-calcs ol {
-	padding-left: 40px;
+.best-and-worst-calcs > ol {
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style-position: inside;
 }
 
 /* Schriftgrösse ändern */
