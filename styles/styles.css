@@ -188,6 +188,17 @@ section > p {
 	font-weight: bold;
 }
 
+.time-optimizations-graph {
+	text-align: center;
+}
+
+.time-optimizations-graph img {
+	max-width: 200px;
+	max-height: 200px;
+	width: auto;
+	height: auto;
+}
+
 /* Buttons */
 button {
 	background-color: #0060A0;
