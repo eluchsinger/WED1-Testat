@@ -149,15 +149,14 @@ section > p {
 	height: 650px;
 }
 
+/* Zuletzt geändert */
 .last-changed {
 	border-style: dotted;
 	border-width: 1px;
+	font-style: italic;
 }
 
 /* Zeitgewinn Tabelle */
-.time-optimizations table, th, td {
-}
-
 .time-optimizations > table {
 	width: 100%;
 	border-spacing: 0;
