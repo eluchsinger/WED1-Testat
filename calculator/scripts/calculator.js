@@ -26,13 +26,18 @@ window.addEventListener('load', function() {
 
 function clickNumber() {
     input.value += this.value;
+    
+    if(input.value.length > 20){
+        output.value = "Ihre Zahl ist zu lang :o"
+        input.value = "";
+    }
 }
 
 function clickOperation(){
     operation.operator = this.value;
     
     if (input.value != ""){
-        if (output.value == "Guten Tag, ich bin Rechni :)" || output.value == "Bitte rechnen Sie etwas vernünftiges ;)"){
+        if (output.value == "Guten Tag, ich bin Rechni :)" || output.value == "Bitte rechnen Sie etwas vernünftiges ;)" || output.value == "Ihre Zahl ist zu lang :o"){
             operation.value = input.value;
             input.value = "";
         } 
