@@ -149,11 +149,20 @@ article > p {
 	height: 650px;
 }
 
-/* Zuletzt geändert */
-.last-changed {
+/* Zuletzt geändert (Fusszeile) */
+main > article > footer {
 	border-style: dotted;
 	border-width: 1px;
 	font-style: italic;
+}
+
+main > article > footer > address {
+	display: inline-block;
+}
+
+main > article > footer > time {
+	display: inline-block;
+	float: right;
 }
 
 /* Zeitgewinn Tabelle */
