@@ -169,3 +169,13 @@ input[type=text], [type=email], [type=url], select {
     padding: 12px 20px;
     margin: 8px 0;
 }
+
+fieldset {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.form-group {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

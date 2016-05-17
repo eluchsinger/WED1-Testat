@@ -366,22 +366,28 @@
 				<form method="post" action="?">
 					<fieldset>
 						<legend>Autor</legend>
-						<div>
+						<div class="form-group">
+							<input type="radio" name="gender" value="male" />Herr <br />
+						</div>
+						<div class="form-group">
+							<input type="radio" name="gender" value="female" />Frau <br />
+						</div>
+						<div class="form-group">
 							<label>Name
 								<input type="text" name="aname" placeholder="Name" />
 							</label>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>E-Mail
 								<input type="email" name="amail" placeholder="E-Mail" />
 							</label>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>Webseite
 								<input type="url" name="website" placeholder="Webseite" />
 							</label>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>Nationalität
 								<select name="anationality" >
 									<option value="-- Wählen --">-- Wählen --</option>
@@ -393,12 +399,12 @@
 								</select>
 							</label>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>Profiltext
 								<input type="text" name="profiletext">
 							</label>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>Profilbilder
 								<input type="file" name="profilepic" />
 							</label>
@@ -406,7 +412,7 @@
 					</fieldset>
 					<fieldset>
 						<legend>Rechtliches</legend>
-						<div>
+						<div class="form-group">
 							<label>
 								<input type="checkbox" value="Test">
 								Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin.
