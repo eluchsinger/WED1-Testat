@@ -186,6 +186,7 @@ section > p {
 
 .time-optimizations > table td:first-child {
 	text-align: left;
+	font-weight: bold;
 }
 
 /* Buttons */
