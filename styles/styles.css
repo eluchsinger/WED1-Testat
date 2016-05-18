@@ -132,6 +132,7 @@ article > p {
 	list-style-position: inside;
 }
 
+
 /* Schriftgrösse ändern */
 #font-size-form {
 	float: right;
@@ -161,7 +162,6 @@ main > article > footer > address {
 }
 
 main > article > footer > time {
-	display: inline-block;
 	float: right;
 }
 
