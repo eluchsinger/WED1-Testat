@@ -53,18 +53,18 @@ body > footer a {
 
 /* Navigation */
 nav {
-	margin-top: 50px;
+	margin-top: 2.5em;
 }
 
 nav > h2 {
-	margin-bottom: 15px;
+	margin-bottom: 0.5em;
 }
 
 nav > ul {
 	border-width: 2px;
 	border-style: solid;
 	border-color: rgb(60, 120, 150);
-	padding: 7px;
+	padding: 0.5em;
 }
 
 nav ul {
@@ -72,13 +72,13 @@ nav ul {
 }
 
 nav ul > li > ul {
-	padding-left: 15px;
+	padding-left: 1.2em;
 }
 
 /* Grosser Titel der Wiki Seite */
-.article-header * {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.article-header {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 /* Side-picture */
@@ -87,9 +87,9 @@ nav ul > li > ul {
 }
 .article-picture {
 	float: left;
-	margin-top: 30px;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-top: 2em;
+	margin-right: 1em;
+	margin-bottom: 1em;
 	width: 240px;
 }
 
@@ -103,12 +103,12 @@ nav ul > li > ul {
 
 /* Article Styles*/
 article {
-	margin-bottom: 15px;
+	margin-bottom: 1em;
 }
 
 article > h3 {
 	border-bottom-style: solid;
-	margin-bottom: 15px;
+	margin-bottom: 1em;
 }
 
 article > h3::before {
@@ -117,22 +117,28 @@ article > h3::before {
 }
 
 article > h4 {
-	margin-bottom: 15px;
+	margin-bottom: 1em;
 }
 
 article > p {
-	margin-bottom: 15px;
+	margin-bottom: 1em;
 }
 
 
 /* Taschenrechner Varianten */
-.calculator-variants article > ul {
-	padding-left: 40px;
+.calculator-variants > ul {
+	padding-left: 1em;
 	margin: 0;
+	list-style: none;
 }
 
-.calculator-variants article > h4 {
+.calculator-variants > ul li::before {
+	content: "\02316 \0020";
+}
+
+.calculator-variants > h4 {
 	color: #0563A2;
+	margin: 0;
 }
 
 .best-and-worst-calcs > ol {
@@ -141,7 +147,6 @@ article > p {
 	margin-bottom: 10px;
 	list-style-position: inside;
 }
-
 
 /* Schriftgrösse ändern */
 #font-size-form {
@@ -165,6 +170,7 @@ main > article > footer {
 	border-style: dotted;
 	border-width: 1px;
 	font-style: italic;
+	margin-top: 1em;
 }
 
 main > article > footer > address {
