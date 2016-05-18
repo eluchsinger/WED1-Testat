@@ -181,7 +181,7 @@
 					<!-- http://stackoverflow.com/a/7295013 -->
 					Zuletzt geändert von 
 					<address class="author"><a rel="author">Philipp Graf</a></address>
-					<time pubdate datetime="2016-02-11" title="Donnerstag, 11. Februar 2016, 12:45">Donnerstag, 11. Februar 2016, 12:45</time>
+					<time datetime="2016-02-11" title="Donnerstag, 11. Februar 2016, 12:45">Donnerstag, 11. Februar 2016, 12:45</time>
 				</footer>
 			</article>
 			<article class="calculator-variants">
@@ -229,7 +229,7 @@
 					<!-- http://stackoverflow.com/a/7295013 -->
 					Zuletzt geändert von
 					<address class="author"><a rel="author">Gabriela Kant</a></address>
-					<time pubdate datetime="2016-02-11" title="Donnerstag, 11. Februar 2016, 10:09">Donnerstag, 11. Februar 2016, 10:09</time>
+					<time datetime="2016-02-11" title="Donnerstag, 11. Februar 2016, 10:09">Donnerstag, 11. Februar 2016, 10:09</time>
 				</footer>
 			</article>
 			<article class="time-optimizations">
@@ -288,7 +288,7 @@
 					<!-- http://stackoverflow.com/a/7295013 -->
 					Zuletzt geändert von
 					<address class="author"><a rel="author">Leandra Gross</a></address>
-					<time pubdate datetime="2016-02-29" title="Freitag, 29. Februar 2016, 13:02">Freitag, 29. Februar 2016, 13:02</time>
+					<time datetime="2016-02-29" title="Freitag, 29. Februar 2016, 13:02">Freitag, 29. Februar 2016, 13:02</time>
 				</footer>
 			</article>
 			<article>
@@ -305,7 +305,7 @@
 					<!-- http://stackoverflow.com/a/7295013 -->
 					Zuletzt geändert von
 					<address class="author"><a rel="author">Paul Sarner</a></address>
-					<time pubdate datetime="2016-02-10" title="Donnerstag, 10. Februar 2016, 18:38">Donnerstag, 10. Februar 2016, 18:38</time>
+					<time datetime="2016-02-10" title="Donnerstag, 10. Februar 2016, 18:38">Donnerstag, 10. Februar 2016, 18:38</time>
 				</footer>
 			</article>
 			<article class="best-and-worst-calcs">
@@ -326,7 +326,7 @@
 					<!-- http://stackoverflow.com/a/7295013 -->
 					Zuletzt geändert von
 					<address class="author"><a rel="author">Petra Summer</a></address>
-					<time pubdate datetime="2016-02-11" title="Donnerstag, 11. Februar 2016, 14:13">Donnerstag, 11. Februar 2016, 14:13</time>
+					<time datetime="2016-02-11" title="Donnerstag, 11. Februar 2016, 14:13">Donnerstag, 11. Februar 2016, 14:13</time>
 				</footer>
 			</article>
 			<article>
@@ -351,7 +351,7 @@
 			</article>
 			<article>
 				<h2>Neuen Autor registrieren</h2>
-				<form method="post" action="?">
+				<form method="post" action="?" id="registration">
 					<fieldset>
 						<legend>Autor</legend>
 						<div class="form-group">
@@ -362,22 +362,22 @@
 						</div>
 						<div class="form-group">
 							<label>Name
-								<input type="text" name="aname" placeholder="Name" required/>
+								<input type="text" name="aname" placeholder="Name" class="form-field" required/>
 							</label>
 						</div>
 						<div class="form-group">
 							<label>E-Mail
-								<input type="email" name="amail" placeholder="E-Mail" required/>
+								<input type="email" name="amail" placeholder="E-Mail" class="form-field" required/>
 							</label>
 						</div>
 						<div class="form-group">
 							<label>Webseite
-								<input type="url" name="website" placeholder="Webseite" required/>
+								<input type="url" name="website" placeholder="Webseite" class="form-field" required/>
 							</label>
 						</div>
 						<div class="form-group">
 							<label>Nationalität
-								<select name="anationality" required>
+								<select name="anationality" class="form-field" required>
 									<option value="-- Wählen --">-- Wählen --</option>
 									<option value="Switzerland">Switzerland</option>
 									<option value="Deutschland">Deutschland</option>
@@ -389,7 +389,7 @@
 						</div>
 						<div class="form-group">
 							<label>Profiltext
-								<input type="text" name="profiletext" required>
+								<textarea name="profiletext" class="profile-text" required></textarea>
 							</label>
 						</div>
 						<div class="form-group">

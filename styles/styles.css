@@ -234,8 +234,15 @@ button {
 }
 
 /* Anmeldeformular*/
-input[type=text], [type=email], [type=url], select {
+.form-field {
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.profile-text {
+	width: 100%;
+	height: 100px;
     padding: 12px 20px;
     margin: 8px 0;
 }
