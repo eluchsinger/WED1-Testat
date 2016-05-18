@@ -20,8 +20,8 @@ body {
 	font-size: 1rem;
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
 	
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 5em;
+	margin-right: 5em;
 	counter-reset: h3;
 }
 
