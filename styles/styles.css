@@ -41,6 +41,16 @@ header h1 {
 	font-size: 3em;
 }
 
+body > footer {
+	background-color: #0060A0;
+	color: white;
+	padding: 1em;
+}
+
+body > footer a {
+	color: white;
+}
+
 /* Navigation */
 nav {
 	margin-top: 50px;
