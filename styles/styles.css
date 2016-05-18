@@ -81,25 +81,6 @@ nav ul > li > ul {
 	margin-bottom: 0.5em;
 }
 
-/* Side-picture */
-.article-picture {
-	color: grey;
-}
-.article-picture {
-	float: left;
-	margin-top: 2em;
-	margin-right: 1em;
-	margin-bottom: 1em;
-	width: 240px;
-}
-
-.article-picture a {
-	color: black;
-}
-
-.article-picture img {
-	width:200px;
-}
 
 /* Article Styles*/
 article {
@@ -107,7 +88,7 @@ article {
 }
 
 article > h3 {
-	border-bottom-style: solid;
+	border-bottom: solid 1.5px black;
 	margin-bottom: 1em;
 }
 
@@ -124,6 +105,23 @@ article > p {
 	margin-bottom: 1em;
 }
 
+/* Side-picture */
+.article-picture {
+	float: left;
+	margin-top: 2em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	width: 240px;
+	color: grey;
+}
+
+.article-picture a {
+	color: black;
+}
+
+.article-picture img {
+	width:200px;
+}
 
 /* Taschenrechner Varianten */
 .calculator-variants > ul {
