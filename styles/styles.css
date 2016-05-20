@@ -240,6 +240,10 @@ button {
     margin: 8px 0;
 }
 
+.form-field:invalid {
+	border: 1px solid  red;
+}
+
 .profile-text {
 	width: 100%;
 	height: 100px;
