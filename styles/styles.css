@@ -240,8 +240,19 @@ button {
     margin: 8px 0;
 }
 
-.form-field:invalid {
-	border: 1px solid  red;
+.form-field:valid {
+	background-color: green;
+}
+
+.form-field:focus:invalid {
+	background-color: red;
+}
+
+
+.form-select {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
 }
 
 .profile-text {
@@ -249,6 +260,7 @@ button {
 	height: 100px;
     padding: 12px 20px;
     margin: 8px 0;
+	resize: none;
 }
 
 fieldset {
