@@ -238,16 +238,9 @@ button {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+	border: none;
+	border-bottom: 1px solid black;
 }
-
-.form-field:valid {
-	background-color: green;
-}
-
-.form-field:focus:invalid {
-	background-color: red;
-}
-
 
 .form-select {
 	width: 100%;
@@ -261,6 +254,27 @@ button {
     padding: 12px 20px;
     margin: 8px 0;
 	resize: none;
+	border: 1px solid black;
+}
+
+.form-field:valid {
+	background-color: #B4E0B4;
+}
+
+.form-field:focus:invalid {
+	background-color: #FF2525;
+	outline: none;
+}
+
+/* Pseudo Klasse für Mozilla Firefox */
+.form-field:-moz-ui-invalid {
+	background-color: #FF2525;
+	outline: none;
+}
+
+.form:focus{
+	outline: none;
+	border-bottom: 2px solid #bdbdbd;
 }
 
 fieldset {
