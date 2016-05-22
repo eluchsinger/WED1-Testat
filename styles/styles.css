@@ -161,6 +161,8 @@ article > p {
 .calc-demo {
 	width: calc(70vw);
 	height: calc(70vw * 1.08);
+	max-width: 550px;
+	max-height: 594px;
 }
 
 /* Video mit Bedienungsanleitung */
