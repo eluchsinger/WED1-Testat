@@ -159,8 +159,14 @@ article > p {
 
 /* Taschenrechner Demo */
 .calc-demo {
-	width: 600px;
-	height: 650px;
+	width: calc(60vw);
+	height: calc(60vw * 1.08);
+}
+
+/* Youtube Video */
+.youtube-video {
+	width: calc(70vw);
+	height: calc(70vw / 1.7);
 }
 
 /* Zuletzt geändert (Fusszeile) */
