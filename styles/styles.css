@@ -159,8 +159,18 @@ article > p {
 
 /* Taschenrechner Demo */
 .calc-demo {
-	width: calc(60vw);
-	height: calc(60vw * 1.08);
+	width: calc(70vw);
+	height: calc(70vw * 1.08);
+}
+
+/* Video mit Bedienungsanleitung */
+.calc-intoruction {
+	width: 100%;
+}
+
+/* Berechnung Object */
+.berechnung {
+	width: 100%;
 }
 
 /* Youtube Video */
