@@ -304,3 +304,10 @@ fieldset {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+
+/*List Style für Bookmarks */
+.flag {
+	height: 1rem;
+	margin-right: 3px;
+}
