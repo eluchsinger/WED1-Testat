@@ -311,3 +311,12 @@ fieldset {
 	height: 1rem;
 	margin-right: 3px;
 }
+
+/* Search */
+.search {
+	background-image:url('../media/icon-search.svg');
+	background-size: 1em 1em;
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding-left: 30px;
+}
