@@ -123,6 +123,10 @@ article > p {
 	width:200px;
 }
 
+.article-picture figcaption {
+	word-wrap:break-word;
+}
+
 /* Taschenrechner Varianten */
 .calculator-variants > ul {
 	padding-left: 1em;
