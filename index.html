@@ -331,27 +331,25 @@
 			</article>
 			<article>
 				<h3>Taschenrechner suchen nach Modell</h3>
-				<form action="">
+				<form name="search"> 
 					<input type="search" list="search-options">
 					<button type="submit" value="Search" class="search">Search</button>
+					<datalist id="search-options">
+						<option value="Mexico Instrument TI 30"></option>
+						<option value="Mexico Instrument TI 32"></option>
+						<option value="Mexico Instrument D*D"></option>
+						<option value="Casino UX5"></option>
+						<option value="Casino TZZ"></option>
+						<option value="Casino Basic"></option>
+						<option value="HG Calc++"></option>
+						<option value="HG Productive"></option>
+						<option value="HG GO-ON"></option>
+					</datalist>
 				</form>
-				
-				<!-- Für die Autocomplete Funktion der Suche. -->
-				<datalist id="search-options">
-					<option value="Mexico Instrument TI 30"></option>
-					<option value="Mexico Instrument TI 32"></option>
-					<option value="Mexico Instrument D*D"></option>
-					<option value="Casino UX5"></option>
-					<option value="Casino TZZ"></option>
-					<option value="Casino Basic"></option>
-					<option value="HG Calc++"></option>
-					<option value="HG Productive"></option>
-					<option value="HG GO-ON"></option>
-				</datalist>
 			</article>
 			<article>
 				<h2>Neuen Autor registrieren</h2>
-				<form method="post" action="?" id="registration">
+				<form method="post" id="registration" name="registration">
 					<fieldset>
 						<legend>Autor</legend>
 						<div class="form-group form">
