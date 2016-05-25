@@ -35,7 +35,9 @@ function clickOperation(){
     operation.operator = this.value;
     
     if (input.value != ""){
-        if (output.value == "Guten Tag, ich bin Rechni :)" || output.value == "Bitte rechnen Sie etwas vernünftiges ;)" || output.value == "Ihre Zahl ist zu lang :o"){
+        if (output.value == "Guten Tag, ich bin Rechni :)" 
+            || output.value == "Bitte rechnen Sie etwas vernünftiges ;)" 
+            || output.value == "Ihre Zahl ist zu lang :o"){
             operation.value = input.value;
             input.value = "";
         } 
