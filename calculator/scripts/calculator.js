@@ -2,8 +2,7 @@
  * UI, Load
  */
 window.addEventListener('load', function() {
-    operation = {value:"", operator:""};
-    output.innerText = "Guten Tag, ich bin Rechni :)";
+    output.value = "Guten Tag, ich bin Rechni :)";
     input = document.getElementById("input");
     output = document.getElementById("output");
     
@@ -19,7 +18,6 @@ window.addEventListener('load', function() {
     document.getElementById("key-=").addEventListener(('click'), doIt);
     
 });
-
 /**
  * UI, Functions
  */
@@ -69,6 +67,7 @@ function cFunction() {
 /**
  * Core
  */
+operation = {value:"", operator:""};
 
 function calculate(p1, p2){
     switch (operation.operator) {
