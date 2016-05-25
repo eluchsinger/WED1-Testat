@@ -51,6 +51,11 @@ body > footer a {
 	color: white;
 }
 
+/* Small */
+small {
+	color: grey;
+}
+
 /* Navigation */
 nav {
 	margin-top: 2.5em;
@@ -172,10 +177,6 @@ article > p {
 /* Video mit Bedienungsanleitung */
 .calc-intoruction {
 	width: 100%;
-}
-
-figcaption > small {
-	color: grey;
 }
 
 figcaption > p {
