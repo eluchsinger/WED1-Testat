@@ -47,6 +47,10 @@ body > footer {
 	padding: 1em;
 }
 
+body > footer > small {
+	color: white;
+}
+
 body > footer a {
 	color: white;
 }
