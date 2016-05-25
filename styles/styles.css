@@ -84,12 +84,36 @@ nav ul > li > ul {
 	padding-left: 1.2em;
 }
 
+/* Navigation Flags */
+nav li>a[lang]::before {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background-size: 20px 15px;
+	content: "";
+	padding-left: 0.2em;
+}
+
+nav li>a:lang(en):before {
+	background: url('../media/flag-en.svg') no-repeat;
+	background-size: 20px 15px;
+}
+
+nav li>a:lang(fr):before {
+	background: url('../media/flag-fr.svg') no-repeat;
+	background-size: 20px 15px;
+}
+
+nav li>a:lang(it):before {
+	background: url('../media/flag-it.svg') no-repeat;
+	background-size: 20px 15px;
+}
+
 /* Grosser Titel der Wiki Seite */
 .article-header {
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
 }
-
 
 /* Article Styles*/
 article {
