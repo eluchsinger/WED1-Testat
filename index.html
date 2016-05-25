@@ -353,24 +353,33 @@
 					<fieldset>
 						<legend>Autor</legend>
 						<div class="form-group form">
-							<input type="radio" name="gender" value="male" required/> Herr <br />
+							<label>
+								Herr <input type="radio" name="gender" value="male" required />
+							</label>
 						</div>
 						<div class="form-group">
-							<input type="radio" name="gender" value="female"/> Frau <br />
+							<label>
+							Frau <input type="radio" name="gender" value="female" />
+							</label>
 						</div>
 						<div class="form-group">
 							<label>Name
-								<input type="text" name="aname" placeholder="Name" class="form-field form" required/>
+								<input type="text" name="aname" placeholder="Name" class="form-field form" required />
 							</label>
 						</div>
 						<div class="form-group">
 							<label>E-Mail
-								<input type="email" name="amail" placeholder="E-Mail" class="form-field form" required/>
+								<input type="email" name="amail" placeholder="E-Mail" class="form-field form" required />
 							</label>
 						</div>
 						<div class="form-group">
 							<label>Webseite
-								<input type="url" name="website" placeholder="Webseite" class="form-field form" required/>
+								<input type="url" name="website" placeholder="Webseite" class="form-field form" required />
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Geburtsdatum
+								<input type="date" name="gaburtsdatum" placeholder="YYYY.mm.dd" class="form-field form" required />
 							</label>
 						</div>
 						<div class="form-group">
@@ -391,7 +400,7 @@
 							</label>
 						</div>
 						<div class="form-group">
-							<label>Profilbilder
+							<label>Profilbilder <br />
 								<input type="file" name="profilepic" />
 							</label>
 						</div>

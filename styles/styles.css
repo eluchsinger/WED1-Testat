@@ -319,6 +319,10 @@ fieldset {
 	margin-bottom: 10px;
 }
 
+.form-group > label {
+	color: grey;
+}
+
 
 /*List Style für Bookmarks */
 .flag {
