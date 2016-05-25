@@ -352,13 +352,11 @@ fieldset {
 	margin-bottom: 10px;
 }
 
-.form-group {
+fieldset > label {
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-.form-group > label {
 	color: grey;
+	display: block;
 }
 
 /* Search */
