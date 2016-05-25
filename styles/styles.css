@@ -361,13 +361,6 @@ fieldset {
 	color: grey;
 }
 
-
-/*List Style für Bookmarks */
-.flag {
-	height: 1rem;
-	margin-right: 3px;
-}
-
 /* Search */
 .search {
 	background-image:url('../media/icon-search.svg');
