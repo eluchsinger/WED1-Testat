@@ -1,3 +1,9 @@
+/* Schriftart muss lokal hinzugefügt werden. */
+@font-face {
+	font-family: "URW Gothic L";
+	src: url('../fonts/urw-gothic-l-book.ttf');
+}
+
 /* reset */
 *  {
 	-webkit-box-sizing: border-box;
