@@ -114,6 +114,10 @@ nav a {
 	color: rgb(96, 155, 194);
 }
 
+nav a:hover {
+	text-decoration: none;
+}
+
 /* Grosser Titel der Wiki Seite */
 .article-header {
 	margin-top: 1.5em;
