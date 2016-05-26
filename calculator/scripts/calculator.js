@@ -6,8 +6,10 @@ window.addEventListener('load', function() {
     input = document.getElementById("input");
     output = document.getElementById("output");
     
-    for (i = 0; i < document.getElementsByClassName("number").length; i++) { 
-        document.getElementsByClassName("number")[i].addEventListener('click', clickNumber);
+    var numbers = document.getElementsByClassName("number");
+    
+    for (i = 0; i < numbers.length; i++) { 
+        numbers[i].addEventListener('click', clickNumber);
     }
     
     for (i = 0; i < document.getElementsByClassName("operator").length; i++){
