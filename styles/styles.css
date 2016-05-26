@@ -341,21 +341,15 @@ form input:focus, textarea:focus {
 }
 
 
-/* Anmeldeformular*/
-.form-select {
+/* Dropdown */
+.form-dropdown {
 	background-color: rgba(83, 83, 83, 0.1);
 	width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
 }
 
-/* Pseudo Klasse für Mozilla Firefox */
-.form-field:-moz-ui-invalid {
-	background-color: #FF2525;
-	outline: none;
-}
-
-/* Die Labels des Fieldsets*/
+/* Die Labels der Inputs */
 fieldset {
 	margin-top: 10px;
 	margin-bottom: 10px;
