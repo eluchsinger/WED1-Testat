@@ -331,9 +331,9 @@
 			</article>
 			<article>
 				<h3>Taschenrechner suchen nach Modell</h3>
-				<form name="search"> 
+				<form name="search" method="post" class="search-form"> 
 					<input type="search" list="search-options">
-					<button type="submit" value="Search" class="search">Search</button>
+					<button type="submit" value="Search">Search</button>
 					<datalist id="search-options">
 						<option value="Mexico Instrument TI 30"></option>
 						<option value="Mexico Instrument TI 32"></option>
@@ -353,22 +353,22 @@
 					<fieldset>
 						<legend>Autor</legend>
 						<label>
-							Herr <input type="radio" name="gender" value="male" required />
+							Herr <input type="radio" name="gender" value="male" />
 						</label>
 						<label>
 							Frau <input type="radio" name="gender" value="female" />
 						</label>
 						<label>Name
-							<input type="text" name="aname" placeholder="Name" class="form-field form" required />
+							<input type="text" name="aname" placeholder="Name" required />
 						</label>
 						<label>E-Mail
-							<input type="email" name="amail" placeholder="E-Mail" class="form-field form" required />
+							<input type="email" name="amail" placeholder="E-Mail" required />
 						</label>
 						<label>Webseite
-							<input type="url" name="website" placeholder="Webseite" class="form-field form" required />
+							<input type="url" name="website" placeholder="Webseite" required />
 						</label>
 						<label>Geburtsdatum
-							<input type="date" name="gaburtsdatum" placeholder="YYYY.mm.dd" class="form-field form" required />
+							<input type="date" name="gaburtsdatum" placeholder="YYYY.mm.dd" required />
 						</label>
 						<label>Nationalität
 							<select name="anationality" class="form-select form" required>

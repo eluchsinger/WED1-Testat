@@ -303,40 +303,50 @@ button {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Anmeldeformular*/
-.form-field {
+/* Search */
+.search-form {
+	width: 300px;
+}
+
+.search-form input[type=search] {
+	display: inline-block;
+	width: 200px;
+}
+
+.search-form > button {
+	display: inline-block;
+	background-image:url('../media/icon-search.svg');
+	background-size: 1em 1em;
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding-left: 30px;
+}
+
+/* Formulare Allgemein */
+form input:not([type=radio]):not([type=checkbox]):not([type=file]), textarea {
+	display: block;
 	background-color: rgba(83, 83, 83, 0.1);
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+	
+	color: black;
 	border: none;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
+form input:focus, textarea:focus {
+	color: #0060A0 !important;
+	border-bottom: 2px solid #0060A0 !important;
+}
+
+
+/* Anmeldeformular*/
 .form-select {
 	background-color: rgba(83, 83, 83, 0.1);
 	width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-}
-
-.profile-text {
-	background-color: rgba(83, 83, 83, 0.1);
-	width: 100%;
-	height: 100px;
-    padding: 12px 20px;
-    margin: 8px 0;
-	resize: none;
-	border: 1px solid black;
-}
-
-.form-field:valid {
-	background-color: #B4E0B4;
-}
-
-.form-field:focus:invalid {
-	background-color: #FF2525;
-	outline: none;
 }
 
 /* Pseudo Klasse für Mozilla Firefox */
@@ -345,11 +355,7 @@ button {
 	outline: none;
 }
 
-.form:focus{
-	outline: none;
-	border-bottom: 2px solid #bdbdbd;
-}
-
+/* Die Labels des Fieldsets*/
 fieldset {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -360,13 +366,4 @@ fieldset > label {
 	margin-bottom: 10px;
 	color: grey;
 	display: block;
-}
-
-/* Search */
-.search {
-	background-image:url('../media/icon-search.svg');
-	background-size: 1em 1em;
-	background-repeat: no-repeat;
-	background-position: 10px 10px;
-	padding-left: 30px;
 }
