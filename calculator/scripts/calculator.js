@@ -27,7 +27,7 @@ window.addEventListener('load', function() {
 
 function clickNumber() {
     input.value += this.value;
-    operation.input = input.value;
+    operation.input += this.value;
     
     if(operation.input.length > 20){
         output.value = "Ihre Zahl ist zu lang :o"
@@ -45,7 +45,7 @@ function clickOperation(){
             || output.value == "Ihre Zahl ist zu lang :o"){
             operation.value = operation.input;
             input.value = "";
-            operation.input = input.value;
+            operation.input = "";
         } 
     } 
     output.value = operation.value + " " + operation.operator;
@@ -63,7 +63,7 @@ function doIt(){
         output.value = operation.value;
     }
     input.value = "";
-    operation.input = input.value;
+    operation.input = "";
 }
 
 function cFunction() {
