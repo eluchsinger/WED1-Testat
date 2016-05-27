@@ -7,13 +7,14 @@ window.addEventListener('load', function() {
     output = document.getElementById("output");
     
     var numbers = document.getElementsByClassName("number");
+    var operators = document.getElementsByClassName("operator");
     
     for (i = 0; i < numbers.length; i++) { 
         numbers[i].addEventListener('click', clickNumber);
     }
     
-    for (i = 0; i < document.getElementsByClassName("operator").length; i++){
-        document.getElementsByClassName("operator")[i].addEventListener("click", clickOperation);
+    for (i = 0; i < operators.length; i++){
+        operators[i].addEventListener("click", clickOperation);
     }
     
     document.getElementById("key-c").addEventListener(('click'), cFunction);
@@ -26,24 +27,27 @@ window.addEventListener('load', function() {
 
 function clickNumber() {
     input.value += this.value;
+    operation.input = input.value;
     
-    if(input.value.length > 20){
+    if(operation.input.length > 20){
         output.value = "Ihre Zahl ist zu lang :o"
         input.value = "";
+        operation.input = input.value;
     }
 }
 
 function clickOperation(){
     operation.operator = this.value;
     
-    if (input.value != ""){
+    if (operation.input != ""){
         if (output.value == "Guten Tag, ich bin Rechni :)" 
             || output.value == "Bitte rechnen Sie etwas vernünftiges ;)" 
             || output.value == "Ihre Zahl ist zu lang :o"){
-            operation.value = input.value;
+            operation.value = operation.input;
             input.value = "";
+            operation.input = input.value;
         } 
-    }
+    } 
     output.value = operation.value + " " + operation.operator;
 }
 
@@ -55,23 +59,24 @@ function doIt(){
         output.value = "Bitte rechnen Sie etwas vernünftiges ;)"
         operation.value = "";
     } else {
-        operation.value = calculate(operation.value, input.value);
+        operation.value = calculate(operation.value, operation.input);
         output.value = operation.value;
-        operation.value = "";
     }
     input.value = "";
+    operation.input = input.value;
 }
 
 function cFunction() {
     output.value = "Guten Tag, ich bin Rechni :)";
     operation.value = "";
     input.value = "";
+    operation.input = "";
 }
 
 /**
  * Core
  */
-operation = {value:"", operator:""};
+operation = {value:"", operator:"", input:""};
 
 function calculate(p1, p2){
     switch (operation.operator) {
