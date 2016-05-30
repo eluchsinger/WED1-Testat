@@ -43,14 +43,7 @@ body > footer {
 	color: white;
 	padding: 1em;
 }
-
-body > footer > small {
-	color: white;
-}
-
-body > footer a {
-	color: white;
-}
+ 
 
 main a {
 	color: black;
@@ -170,17 +163,21 @@ article > p {
 }
 
 /* Taschenrechner Varianten */
-.calculator-variants > ul {
-	padding-left: 1em;
+.calculator-variants > dl {
+	padding-left: 0;
 	margin: 0;
 	list-style: none;
 }
 
-.calculator-variants > ul li::before {
+.calculator-variants > dl > dd {
+	margin-left: 1em;
+}
+
+.calculator-variants > dl dd::before {
 	content: "\02316 \0020";
 }
 
-.calculator-variants > h4 {
+.calculator-variants > dl dt {
 	color: #0563A2;
 	margin: 0;
 }
@@ -237,6 +234,8 @@ main > article > footer {
 	border-width: 1px;
 	font-style: italic;
 	margin-top: 1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 
 main > article > footer > address {
