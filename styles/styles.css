@@ -38,10 +38,19 @@ header h1 {
 	font-size: 3em;
 }
 
+/* Footer der ganzen Webseite (Ja, wird wirklich so gebraucht!) */
 body > footer {
 	background-color: #0060A0;
 	color: white;
-	padding: 1em;
+	padding: 1em;	
+}
+
+body > footer > small {
+	color: white;
+}
+
+body > footer a {
+	color: black;
 }
  
 
